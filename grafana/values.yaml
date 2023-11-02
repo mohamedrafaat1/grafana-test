@@ -323,7 +323,7 @@ extraContainerVolumes: []
 persistence:
   type: pvc
   enabled: true
-  storageClassName: efs-sc
+  storageClassName: ebs-sc
   accessModes:
     - ReadWriteOnce
   size: 10Gi
