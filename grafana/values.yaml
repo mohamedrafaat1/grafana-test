@@ -384,7 +384,9 @@ initChownData:
 
 # Administrator credentials when not using an existing secret (see below)
 adminUser: admin
-adminPassword: wa&NWju)&ryYzAMQNa
+#adminPassword: wa&NWju)&ryYzAMQNa
+adminPassword: <path:kv-v2/data/grafana#grafana_Password>
+
 
 # Use an existing secret for the admin user.
 admin:
