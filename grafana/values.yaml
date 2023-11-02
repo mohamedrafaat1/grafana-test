@@ -322,7 +322,7 @@ extraContainerVolumes: []
 ##
 persistence:
   type: pvc
-  enabled: true
+  enabled: false
   storageClassName: ebs-sc
   accessModes:
     - ReadWriteOnce
