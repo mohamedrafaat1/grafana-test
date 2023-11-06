@@ -385,8 +385,8 @@ initChownData:
 # Administrator credentials when not using an existing secret (see below)
 adminUser: admin
 #adminPassword: wa&NWju)&ryYzAMQNa
-# adminPassword: <path:kv-v2/data/demo#password>
-adminPassword: <path:kv-v2/data/test#password>
+adminPassword: helmP@ssw0rd
+#adminPassword: <path:kv-v2/data/test#password>
 
 
 
