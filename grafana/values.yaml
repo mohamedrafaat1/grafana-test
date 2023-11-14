@@ -436,8 +436,8 @@ admin:
 ## make sure to replace arn:aws:iam::123456789000:role/iam-role-name-here with your role arn
 
 env:
-  -name: AVP_SECRET
-   value: staging-secret
+ - name: AVP_SECRET
+   value: "staging-secret"
 # env:
 # plugin:
 #   name: argocd-vault-plugin-helm
