@@ -386,7 +386,7 @@ initChownData:
 adminUser: admin
 #adminPassword: wa&NWju)&ryYzAMQNa
 #adminPassword: helmP@ssw0rd
-adminPassword: <path:kv-v2/data/demo-01#password>
+adminPassword: <path:kv-v2/data/demo-02#password>
 
 
 
