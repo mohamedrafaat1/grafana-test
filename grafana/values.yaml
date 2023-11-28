@@ -386,7 +386,7 @@ initChownData:
 adminUser: admin
 #adminPassword: wa&NWju)&ryYzAMQNa
 #adminPassword: helmP@ssw0rd
-adminPassword: <path:secret/common/grafana_dashboard#password>
+adminPassword: <path:/vault/secrets/secret/show/common/grafana_dashboard#password>
 
 
 
