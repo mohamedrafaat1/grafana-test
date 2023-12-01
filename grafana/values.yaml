@@ -385,8 +385,10 @@ initChownData:
 # Administrator credentials when not using an existing secret (see below)
 adminUser: admin
 #adminPassword: wa&NWju)&ryYzAMQNa
-adminPassword: <path:/secret/data/common/grafana_dashboard#password>
-#adminPassword: <path:/kv/data/test#password>
+#ftg-vault
+#adminPassword: <path:/secret/data/common/grafana_dashboard#password>
+# demo-vault
+adminPassword: <path:kv-v2/data/demo#password>
 
 
 
