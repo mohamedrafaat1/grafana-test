@@ -39,7 +39,7 @@ serviceAccount:
 #    eks.amazonaws.com/role-arn: arn:aws:iam::123456789000:role/iam-role-name-here
   autoMount: true
 
-replicas: 1
+replicas: 3
 
 ## Create a headless service for the deployment
 headlessService: false
@@ -47,8 +47,8 @@ headlessService: false
 ## Create HorizontalPodAutoscaler object for deployment type
 #
 autoscaling:
-  enabled: false
-  minReplicas: 1
+  enabled: true
+  minReplicas: 3
   maxReplicas: 5
   targetCPU: "60"
   targetMemory: ""
