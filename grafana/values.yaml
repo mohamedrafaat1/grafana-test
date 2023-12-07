@@ -386,9 +386,9 @@ initChownData:
 adminUser: admin
 #adminPassword: wa&NWju)&ryYzAMQNa
 #ftg-vault
-#adminPassword: <path:/secret/data/common/grafana_dashboard#password>
+adminPassword: <path:/secret/data/common/grafana_dashboard#password>
 # demo-vault
-adminPassword: <path:kv-v2/data/demo#password>
+#adminPassword: <path:kv-v2/data/demo#password>
 
 
 
