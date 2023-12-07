@@ -47,7 +47,7 @@ headlessService: false
 ## Create HorizontalPodAutoscaler object for deployment type
 #
 autoscaling:
-  enabled: true
+  enabled: false
   minReplicas: 3
   maxReplicas: 5
   targetCPU: "60"
