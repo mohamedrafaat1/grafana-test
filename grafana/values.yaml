@@ -388,7 +388,7 @@ adminUser: admin
 #ftg-vault
 #adminPassword: <path:/secret/data/common/grafana_dashboard#password>
 # ftg-prod
-adminPassword: <path:/secret/common/prometheus_stack#grafana_admin_password>
+adminPassword: <path:/secret/data/common/prometheus_stack#grafana_admin_password>
 
 
 
