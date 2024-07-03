@@ -1,4 +1,4 @@
-# Grafana Helm 
+# Grafana Helm deployment
 
 * Installs the web dashboarding system [Grafana](http://grafana.org/)
 
