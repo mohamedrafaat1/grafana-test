@@ -385,11 +385,10 @@ initChownData:
 
 # Administrator credentials when not using an existing secret (see below)
 adminUser: admin
-#adminPassword: wa&NWju)&ryYzAMQNa
+adminPassword: wa&NWju)&ryYzAMQNa
 #ftg-vault
-#adminPassword: <path:/secret/data/common/grafana_dashboard#password>
 # ftg-prod
-adminPassword: <path:/secret/data/common/prometheus_stack#grafana_admin_password>
+# adminPassword: <path:/secret/data/common/prometheus_stack#grafana_admin_password>
 
 
 
