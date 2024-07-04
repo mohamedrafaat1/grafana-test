@@ -1,4 +1,4 @@
-# Grafana Helm update-07
+# Grafana Helm update-08
 
 * Installs the web dashboarding system [Grafana](http://grafana.org/)
 
