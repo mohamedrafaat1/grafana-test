@@ -1,0 +1,39 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: grafana-app-set
+  namespace: argocd
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/mohamedrafaat1/grafana-test.git
+      revision: HEAD
+      directories:
+      - path: grafana-appset/*/*
+
+  template:      
+    metadata:
+      name: '{{path[2]}}'
+    spec:
+      # The project the application belongs to.
+      project: default
+
+      # Source of the application manifests
+      source:
+        repoURL: https://github.com/mohamedrafaat1/grafana-test.git
+        targetRevision: HEAD
+        #source:
+        path: '{{path}}'
+      
+      # Destination cluster and namespace to deploy the application
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: appset-grafana
+      # Sync policy
+      syncPolicy:
+        syncOptions:
+          - CreateNamespace=true  
+        automated: # automated sync by default retries failed attempts 5 times with following delays between attempts ( 5s, 10s, 20s, 40s, 80s ); retry controlled using `retry` field.
+          prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).
+          selfHeal: false
+
