@@ -9,7 +9,7 @@ spec:
       repoURL: https://github.com/mohamedrafaat1/grafana-test.git
       revision: HEAD
       directories:
-      - path: grafana-appset/*/*
+      - path: grafana-appset/*/
 
   template:      
     metadata:
