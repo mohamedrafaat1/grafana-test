@@ -324,7 +324,7 @@ extraContainerVolumes: []
 persistence:
   type: pvc
   enabled: false
-  storageClassName: ebs-sc
+  storageClassName: efs-sc
   accessModes:
     - ReadWriteOnce
   size: 10Gi
@@ -385,10 +385,10 @@ initChownData:
 
 # Administrator credentials when not using an existing secret (see below)
 adminUser: admin
-adminPassword: wa&NWju)&ryYzAMQNa
+# adminPassword: wa&NWju)&ryYzAMQNa
 #ftg-vault
 # ftg-prod
-# adminPassword: <path:/secret/data/common/prometheus_stack#grafana_admin_password>
+adminPassword: <path:/secret/data/grafana#password>
 
 
 
